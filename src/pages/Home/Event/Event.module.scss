@@ -1,0 +1,230 @@
+.wrapper {
+    margin-top: 48px;
+}
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 24px;
+    margin-left: 8px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &.disable {
+        opacity: 0.1;
+        pointer-events: none;
+    }
+}
+
+.container {
+    overflow: hidden;
+}
+
+.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -14px;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+
+    @media (max-width: 1224px) {
+        margin: 0 -12px;
+    }
+}
+
+.card {
+    width: 33.33333%;
+    padding: 0 14px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+
+    @media (max-width: 1224px) {
+        padding: 0 12px;
+        width: 50%;
+    }
+}
+
+.event-image {
+    display: block;
+    position: relative;
+    padding-bottom: 56.25%;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: background-size 0.5s ease;
+    -o-transition: background-size 0.5s ease;
+    transition: background-size 0.5s ease;
+
+    &:hover {
+        background-size: 110%;
+    }
+}
+
+.body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 13px 10px;
+    color: white;
+}
+
+.description {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    @media (max-width: 740px) {
+        font-size: 14px;
+    }
+}
+
+.time {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.33;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    @media (max-width: 740px) {
+        font-size: 12px;
+    }
+}
+
+.tag {
+    display: inline-block;
+    font-size: 9px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    color: #ff0101;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.event-follow {
+    margin-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    @media (max-width: 740px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    text-transform: none;
+}
+.followers {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.block {
+    width: 15px;
+    height: 20px;
+}
+
+.follower {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-bg);
+    overflow: hidden;
+}
+
+.avatar {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.more {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    font-size: 14px;
+    margin-left: 6px;
+    color: var(--text-secondary);
+}
+
+.right {
+    @media (max-width: 740px) {
+        margin-top: 12px;
+        width: 100%;
+    }
+}
+
+.btn-follow {
+    color: white;
+    &:hover {
+        opacity: 0.9;
+        background-color: var(--purple-primary);
+    }
+
+    @media (max-width: 740px) {
+        width: 100%;
+        padding: 7px 24px;
+    }
+}

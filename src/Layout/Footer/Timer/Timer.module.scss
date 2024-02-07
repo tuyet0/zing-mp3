@@ -1,0 +1,73 @@
+.wrapper {
+    width: 218px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100%;
+    background-color: var(--purple-primary);
+    color: #fff;
+    padding: 9px 16px;
+    font-size: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    font-weight: 700;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4px;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.label {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    font-weight: 400;
+}
+
+.card {
+    padding: 10px 50px;
+}
+
+.figure {
+    position: relative;
+    padding-bottom: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.image {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+}
+
+.name {
+    --line-clamp: 1;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.36;
+    color: var(--text-primary);
+}
+
+.artists {
+    --line-clamp: 1;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.33;
+    color: var(--text-secondary);
+}

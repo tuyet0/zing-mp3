@@ -1,0 +1,69 @@
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.icon {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+}
+
+.album {
+    background-image: var(--empty-album-icon);
+}
+
+.podcast {
+    background-image: var(--empty-podcast-icon);
+}
+
+.song {
+    background-image: var(--empty-song-icon);
+}
+
+.upload {
+    cursor: pointer;
+    background-image: var(--empty-upload-icon);
+}
+
+.mv {
+    background-image: var(--empty-mv-icon);
+}
+
+.text {
+    font-size: 1.6rem;
+    margin-top: 16px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.explore {
+    margin-top: 16px;
+    padding: 9px 24px;
+    font-size: 1.4rem;
+    color: white !important;
+    background-color: var(--purple-primary);
+    border-radius: 999px;
+    min-width: 150px;
+    text-align: center;
+
+    &:hover {
+        -webkit-filter: brightness(0.9);
+        filter: brightness(0.9);
+    }
+}
+
+.input {
+    display: none;
+}

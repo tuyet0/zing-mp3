@@ -1,0 +1,33 @@
+.btns {
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.btn {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 4px 10px;
+    border: 1px solid;
+    border-radius: 999px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--text-primary);
+
+    & + .btn {
+        margin-left: 16px;
+    }
+
+    &:hover {
+        color: var(--link-text-hover);
+        border: 1px solid var(--link-text-hover);
+    }
+
+    &.active {
+        border: 1px solid var(--purple-primary);
+        background-color: var(--purple-primary);
+        color: white !important;
+    }
+}

@@ -1,0 +1,107 @@
+.wrapper {
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    @media (max-width: 740px) {
+        padding-top: 40px;
+    }
+}
+
+.header {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    .btn-play {
+        margin-left: 14px;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        background-color: var(--purple-primary);
+        color: white;
+
+        &:hover {
+            background-color: var(--purple-primary);
+        }
+    }
+}
+
+.zm-section {
+    margin-top: 40px;
+
+    @media (max-width: 740px) {
+        margin-top: 20px;
+    }
+}
+
+.title {
+    font-size: 20px;
+}
+
+.playlists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+
+    @media (max-width: 740px) {
+        margin: 0 -8px;
+    }
+}
+
+.navbar {
+    position: relative;
+    margin: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    width: 73px;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--purple-primary);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.navbarItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 10px;
+
+    &:hover {
+        color: var(--purple-primary);
+    }
+
+    &.active {
+        color: var(--purple-primary);
+    }
+}
